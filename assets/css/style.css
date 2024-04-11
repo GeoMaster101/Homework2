@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 :root{
 --dark: #1d1d1d;
 --dgray: #3a3a3a;
@@ -79,12 +80,12 @@
     border-width: 1px;
     border-radius: 10px;
     padding: 6px;
-    flex: 0 0 400px;
   }
   
   .card header {
     padding: 10px;
-    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
   }
   
   .card p {
@@ -92,9 +93,9 @@
   }
   
   .card img {
-    width: 100%;
+    width:100%;
   }
-  
+
  nav a:hover {
   background-color: var(--dgray);
  }
