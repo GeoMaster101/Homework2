@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 :root{
 --dark: #1d1d1d;
 --dgray: #3a3a3a;
@@ -10,6 +13,7 @@
     font-family: "Oswald",'Playfair Display', 'Lora', Arial;
     font-style: italic;
     margin: 0;
+    background-color: var(--dgray);
   }
   
   header {
@@ -23,28 +27,29 @@
   main {
     display: grid;
     grid-template-columns: repeat(6 , 1fr);
-    grid-auto-rows: auto;
+    grid-auto-rows: auto ;
 
-    
   }
   
-  aside {
-    grid-area: 1/1/6/2;
+  nav {
+    display: flex;
     background-color: var(--dgray);
-    justify-content:center;
-    
+    justify-content: space-between;
+    margin: 0 22px;
   }
 
-  aside a {
+  nav a {
     background-color: var(--gray);
     color: var(--ntext);
     font-size: 30px;
     padding: 10px;
-    margin: 20px;
+    
+
   }
   content{
     grid-area: 1/2/6/6;
   }
+
   .Projects {
     background-color: var(--gray);
     padding: 20px;
@@ -90,18 +95,14 @@
     width: 100%;
   }
   
- aside a:hover {
+ nav a:hover {
   background-color: var(--dgray);
  }
 
- aside a:focus {
+ nav a:focus {
   background-color: var(--dark);
   border-color: var(--gray);
   border-style: solid;
   box-shadow: 2px 2px;
  }
  
-
-  @media screen and (max-width: 900px) {
-
-  }
